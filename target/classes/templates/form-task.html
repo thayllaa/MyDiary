@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	
+	<title> Add task </title>
+	<link rel="stylesheet" th:href="@{css/style.css}">
+</head>
+<body>
+	<section>
+	<h1> Sign Up Form </h1>
+	<form th:action="@{task}" method="post" th:object="${task}">
+	<label> Name: </label><br>
+	<input type="text" th:field="*{name}"><br><br>
+	
+	<label> Category: </label><br>
+	<input type="text" th:field="*{category}"><br><br>
+	
+	<label> Start: </label><br>
+	<input type="text" th:field="*{start}"><br><br>
+	
+	<label> Finish: </label><br>
+	<input type="text" th:field="*{finish}"><br><br>
+	
+	<label> Description: </label><br>
+	<textarea rows="5" cols="30" th:field="*{description}"></textarea><br><br>
+	
+	<input type="submit" value="Add task">
+	</form>
+</section>
+</body>
+</html>

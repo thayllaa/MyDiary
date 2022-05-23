@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	
+	<title> Home </title>
+	<link rel="stylesheet" th:href="@{css/style.css}">
+</head>
+<body>
+	<nav>
+		<ul class="menu">
+			<li><a th:href="@{/form}"> Sign Up </a></li>
+			<li><a th:href="@{/about-us}"> About Us </a></li>
+			<li><a th:href="@{/contact-us}"> Contact </a></li>
+		</ul>
+	</nav>
+	<br>
+	
+	<h1 class="welcome"> 
+		Hello, welcome to My Diary! 
+	</h1>
+	<br>
+	
+	<p>
+		Text in progress...
+	</p>
+	<br>
+	
+	<p> Here's what you have for today. </p>
+	<br>
+	<section>
+		<h2> Your Tasks </h2>
+		<table class="table">
+			<thead>
+				<tr>
+					<th> Name </th>
+					<th> Category </th>
+					<th> Start </th>
+					<th> Finish </th>
+					<th> Description </th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td> .. </td>
+					<td> .. </td>
+					<td> .. </td>
+					<td> .. </td>
+					<td> .. </td>
+				</tr>
+			</tbody>
+		</table>
+	</section>	
+	<br>
+	<br>
+
+	<a th:href="@{/add-task}"> New task </a>
+
+	<br>
+	<br>
+	
+	<br>
+	<footer id="copyright">
+		<p>
+			Copyright 2022<br>
+			Developed by Felipe, Leonardo, Thaylla
+		</p>
+	</footer>
+</body>
+</html>

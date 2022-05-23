@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 2% 10% 0;
+	font-family: Georgia, serif;
+    font-size: 1rem;
+    text-align: center;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+
+.menu {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 15px 15px 10px 10px;
+}
+
+.menu li {
+    display: inline;
+    padding: 30px;
+    border-radius: 7px;
+}
+
+.menu li, a{
+    font-size: 1em;
+    color: #2e8b57;
+    padding: 12px;
+    display: inline-block;
+    text-decoration: none;
+    display: inline;
+}
+
+.menu li, a:hover {
+    padding: 15px 20px 15px 20px;
+    transition: all 0.5s ease-out;
+    background-color: #d0f0c0;
+    color: darkgreen;
+}
+
+.menu a:hover{
+	font-weight: bolder;
+}
+
+.welcome, h1 {
+	font-size: 20px;
+	color: #3cb371;
+    text-align: center;
+}
+
+.container {
+	border: thick double forestgreen;
+	border-radius: 8px;
+	background-color: #e9ffdb;
+	padding: 5px;
+	width: 60em;
+}
+
+input[type="text"], select, textarea {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 5px;
+	border: 1px solid green;
+	border-radius: 8px;
+	margin-top: 6px;
+	margin-bottom: 10px;
+	resize: vertical;
+}
+
+input[type="submit"] {
+	background-color: darkgreen;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+input[submit]:hover {
+	color: black;
+	background-color: #3cb371; 
+}
+
+.required {
+	color: red;
+}
+
+.error, h2{
+	font-size: 1.3em;
+	text-align: center;
+}
+
+.table {
+	table-layout: fixed;
+	width: 100%;
+	border: thick double forestgreen;
+	border-radius: 6px;
+	text-align: center;
+}
+
+th, td {
+	padding: 7px;
+}
+
+#copyright {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#copyright > p{
+	bottom: 0;
+	position: fixed;
+    width: 50%;
+    text-align: center;
+    padding: 0;
+    color: #000;
+    font-weight: bold;
+}

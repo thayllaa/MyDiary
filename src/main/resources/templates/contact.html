@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	
+	<title> Contact </title>
+	<link rel="stylesheet" th:href="@{css/style.css}">
+</head>
+<body>
+	<h1> Contact us </h1>
+	<p>
+		If you're having any kind of troubles with the application, do not hesitate to contact our team. <br>
+		Please, fill this form in a decent manner. 
+	</p>
+	<br>
+	
+	<div class="container">
+		<form method="post" action="http://hub.fatecrl.edu.br/sobrino/recebe.php" 
+		target="_blank" autocomplete="on">
+			<span class="required"> * </span><label> Name: </label><br>
+			<input type="text" id="name">
+			<br>
+			
+			<span class="required"> * </span><label> Subject: </label><br>
+			<select name="subject" id="subj-select"> 
+			<option value=""> -- Choose a subject -- </option>
+			<option value="announcements"> Announcements </option>
+			<option value="account-settings"> Account Settings </option>
+			<option value="community-programs"> Community Programs </option>
+			<option value="getting-started"> Getting Started </option>
+			<option value="my-diary-interface"> My Diary's Interface </option>
+			</select>
+			<br>
+			
+			<span class="required"> * </span><label> Email: </label><br>
+			<input type="email" id="email">
+			<br>
+			
+			<label> Message: </label><br>
+			<textarea id="message" rows="5" cols="30" ></textarea>
+			<br>
+			
+			<input type="submit" value="Submit"> 
+		</form>
+	</div>
+	<br>
+	<br>
+	
+	<footer id="copyright">
+		<p>
+			Copyright 2022<br>
+			Developed by Felipe, Leonardo, Thaylla
+		</p>
+	</footer>
+</body>
+</html>
